@@ -1,4 +1,4 @@
-### SGPN:Similarity Group Proposal Network for 3D Point Cloud Instance Segmentation [<a href="https://arxiv.org/pdf/1711.08588.pdf">Arxiv</a>]
+### SGPN:Similarity Group Proposal Network for 3D Point Cloud Instance Segmentation [<a href="https://arxiv.org/abs/1711.08588">Arxiv</a>]
 
 ### Dependencies
 - `tensorflow` (1.3.0)
@@ -10,11 +10,12 @@ We firstly split the training set into training part and validation part. SGPN i
 ```bash
 python train.py 
 ```
-Use the following scripts for testing. `valid.py` is used to compute the per-category theshold for group merging.
+Use the following scripts to generate results. `valid.py` is used to compute the per-category theshold for group merging. We then use [<a href="github.com/ScanNet/ScanNet/blob/master/BenchmarkScripts/3d_evaluation/evaluate_semantic_instance.py">Scannet Evaluation</a>] to evaluate test results.
 ```bash
 python valid.py
-python test.py
+python generate_results.py
 ```
+
 
 ### Data and Model 
 
