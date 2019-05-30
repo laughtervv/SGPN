@@ -10,7 +10,7 @@ We firstly split the training set into training part and validation part. SGPN i
 ```bash
 python train.py 
 ```
-Use the following scripts to generate results. `valid.py` is used to compute the per-category theshold for group merging. We then use [<a href="github.com/ScanNet/ScanNet/blob/master/BenchmarkScripts/3d_evaluation/evaluate_semantic_instance.py">Scannet Evaluation</a>] to evaluate test results.
+Use the following scripts to generate results. `valid.py` is used to compute the per-category theshold for group merging. We then use <a href="github.com/ScanNet/ScanNet/blob/master/BenchmarkScripts/3d_evaluation/evaluate_semantic_instance.py">Scannet Evaluation</a> to evaluate test results.
 ```bash
 python valid.py
 python generate_results.py
